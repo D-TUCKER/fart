@@ -1,4 +1,5 @@
 # fart
 Name says it all I think. 
 
-[fartscroll.js](https://github.com/theonion/fartscroll.js "fartscroll.js")
+I took the fart out of [fartscroll.js](https://github.com/theonion/fartscroll.js "fartscroll.js"). 
+

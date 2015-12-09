@@ -35,11 +35,11 @@
   };
 
   function getContainer() {
-    var container = document.getElementById("fartscroll");
+    var container = document.getElementById("fart");
 
     if (container === null) {
       container = document.createElement("div");
-      container.id = "fartscroll";
+      container.id = "fart";
       document.getElementsByTagName('body')[0].appendChild(container);
     }
 
@@ -70,6 +70,11 @@ function getAudioFor(player){
   }
 }
 
+function removeContainer() {
+    var elem = document.getElementById("fart");
+    elem.parentNode.removeChild(elem);
+}
+
 module.exports = function fart(){
     var player = getPlayer()
       , audio = getAudioFor(player)
@@ -77,4 +82,7 @@ module.exports = function fart(){
 
     player.src = audio.prefix + audio.sound[rand];
     player.play();
+    player.onended = function() {
+        removeContainer()
+    };
 }

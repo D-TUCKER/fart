@@ -1,0 +1,14 @@
+{
+  "name": "fartjs",
+  "version": "1.0.0",
+  "description": "pthhhhhht",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fart"
+  ],
+  "author": "Darren Tucker",
+  "license": "MIT"
+}
